@@ -1,0 +1,250 @@
+body {
+    background-color: rgb(126, 199, 126) !important;
+}
+
+.div1, .div11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1500px;
+    width: 1700px;
+    flex-wrap: nowrap;
+    
+}
+
+.div2, .div22 {
+    background-image: url('media/image-from-rawpixel-id-1231336-jpeg.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1200px;
+}
+
+img {
+    margin: 30px;
+}
+
+.col-4 img {
+  float: left;
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.circle-outer:before,
+.circle-outer:after {
+  background-color: rgba(238, 134, 134, 0.5);
+  height:450px;
+  width:450px;
+  border-radius: 50%;
+  overflow: auto;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle-outer:before {
+    height:400px;
+    width:400px;
+  }
+  
+.circle-outer:after {
+    height:430px;
+    width:430px;
+  }
+
+  @keyframes circle-outer {
+    0% {
+      transform: scale( 1 );    
+    }
+    10% {
+      transform: scale( 1.25 ) 
+    } 
+    40% {
+      transform: scale( 1.5 ) 
+    }
+  }
+
+.circle-outer {
+    animation: circle-outer 2s infinite;
+  }
+
+#circle-inner {
+    background-color:rgb(243, 52, 52);
+    height: 400px;
+    width: 400px;
+    border-radius:50%;
+    display: grid;
+    place-items: center;
+    overflow: auto;
+}
+ nav {
+    width: 100%;
+ }
+
+ @media only screen and (max-width: 1668px) {
+  body {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    margin-right: 105px !important;
+    flex-direction: column !important;
+  }
+
+ }
+
+ @media only screen and (max-width: 1200px) {
+  body {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    margin-right: 105px !important;
+    flex-direction: column !important;
+  }
+
+  .div1, .div11{
+    align-items: flex-start;
+    width: 1130px;
+  }
+
+  .circle-outer:before {
+    height:300px;
+    width:300px;
+  }
+  
+  .circle-outer:after {
+    height:320px;
+    width:320px;
+  }
+  
+  .circle-outer:before,
+  .circle-outer:after {
+    height:340px;
+    width:340px;
+  }
+
+  #circle-inner {
+    height: 250px;
+    width: 250px;
+  }
+
+  .nav-link {
+    display: flex!important;
+    justify-content: space-evenly !important;
+  }
+    
+  .div22 div {
+    background-color: rgb(133, 197, 176);
+    height: max-content;
+    
+  }
+
+  .div22 li {
+    color: black;
+    
+  }
+
+  .div22 {
+    align-items: center !important;
+  }
+
+ }
+
+ @media only screen and (max-width: 600px) {
+    body {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      width: 100% !important;
+      align-items: center !important;
+      justify-content: space-evenly !important;
+      margin-right: 105px !important;
+      flex-direction: column !important;
+    }
+
+    .div1, .div11{
+      align-items: flex-start;
+      width: 830px;
+    }
+
+    .circle-outer:before {
+      height:250px;
+      width:250px;
+    }
+    
+    .circle-outer:after {
+      height:280px;
+      width:280px;
+    }
+    
+    .circle-outer:before,
+    .circle-outer:after {
+      height:300px;
+      width:300px;
+    }
+
+    #circle-inner {
+      height: 250px;
+      width: 250px;
+    }
+
+    .nav-link {
+      display: flex!important;
+      justify-content: space-evenly !important;
+    }
+      
+    .div22 div {
+      background-color: rgb(133, 197, 176);
+      height: max-content;
+      
+    }
+
+    .div22 li {
+      color: black;
+      
+    }
+
+    .div22 {
+      align-items: center !important;
+    }
+ }
+
+ @media only screen and (max-width: 560px) {
+
+  .div11{
+    align-items: flex-start;
+    width: 530px;
+  }
+
+  .circle-outer:before {
+    height:230px;
+    width:230px;
+  }
+  
+  .circle-outer:after {
+    height:250px;
+    width:250px;
+  }
+  
+  .circle-outer:before,
+  .circle-outer:after {
+    height:250px;
+    width:250px;
+  }
+
+  #circle-inner {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-self: center !important;
+  }
+}
